@@ -2,6 +2,8 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
+Check if a binary exists in your system PATH.
+
 ## Features
 
 - [x] Fully compatible with TypeScript.
