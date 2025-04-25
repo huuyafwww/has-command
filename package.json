@@ -1,0 +1,84 @@
+{
+  "name": "has-bin",
+  "version": "1.0.2",
+  "private": false,
+  "description": "",
+  "keywords": [
+    "has-bin",
+    "has",
+    "bin",
+    "which",
+    "command exists"
+  ],
+  "homepage": "https://github.com/huuyafwww/has-bin",
+  "bugs": {
+    "url": "https://github.com/huuyafwww/has-bin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huuyafwww/has-bin.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:watch": "pkgroll --watch",
+    "build": "pkgroll --minify",
+    "clean": "rimraf node_modules dist .turbo",
+    "lint:code": "eslint . --cache",
+    "lint:type": "tsc --pretty --noEmit",
+    "sort:package": "sort-package-json",
+    "test": "npm-run-all --parallel test:*",
+    "test:vitest": "vitest run",
+    "test:vitest:watch": "vitest run --watch",
+    "version": "changeset",
+    "version:apply": "changeset version",
+    "version:publish": "changeset publish"
+  },
+  "dependencies": {
+    "@types/which": "^3.0.4",
+    "which": "^5.0.0"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.2",
+    "@huuyafwww/eslint-config-common": "^1.2.0",
+    "@huuyafwww/eslint-config-node": "^1.2.0",
+    "@huuyafwww/tsconfig-common": "^1.1.2",
+    "@praha/eslint-config-definer": "^2.0.1",
+    "@types/node": "^22.15.2",
+    "eslint": "9.18.0",
+    "jiti": "^2.4.2",
+    "lefthook": "^1.11.11",
+    "npm-run-all": "^4.1.5",
+    "pkgroll": "^2.12.2",
+    "rimraf": "^6.0.1",
+    "sort-package-json": "^2.15.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  },
+  "packageManager": "pnpm@10.9.0",
+  "engines": {
+    "node": ">=22.12.0",
+    "pnpm": ">=10.9.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
