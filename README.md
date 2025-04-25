@@ -1,4 +1,4 @@
-# has-bin
+# has-command
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -15,7 +15,7 @@ Replace and execute the command according to the package manager you are using.
 Here is an example of npm.
 
 ```sh
-npm install --save-dev has-bin
+npm install --save-dev has-command
 ```
 
 ## Examples
@@ -23,21 +23,21 @@ npm install --save-dev has-bin
 ### ES modules
 
 ```javascript
-import { hasBin } from 'has-bin';
+import { hasCommand } from 'has-command';
 
-console.log(await hasBin('cd')); // true
-console.log(await hasBin('nonexistent_command')); // false
+console.log(await hasCommand('cd')); // true
+console.log(await hasCommand('nonexistent_command')); // false
 ```
 
 ### CommonJS
 
 ```javascript
-const { hasBin } = require('has-bin');
+const { hasCommand } = require('has-command');
 
-console.log(await hasBin('cd')); // true
-console.log(await hasBin('nonexistent_command')); // false
+console.log(await hasCommand('cd')); // true
+console.log(await hasCommand('nonexistent_command')); // false
 ```
 
 ## License
 
-[MIT](https://github.com/huuyafwww/has-bin/blob/main/LICENSE)
+[MIT](https://github.com/huuyafwww/has-command/blob/main/LICENSE)

@@ -1,5 +1,5 @@
-import { hasBin } from './has-bin';
+import { hasCommand } from './has-command';
 
 export {
-  hasBin,
+  hasCommand,
 };

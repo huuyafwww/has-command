@@ -1,22 +1,25 @@
 {
-  "name": "has-bin",
+  "name": "has-command",
   "version": "1.0.0",
   "private": false,
   "description": "",
   "keywords": [
-    "has-bin",
-    "has",
+    "has-command",
+    "executable bin",
+    "command",
+    "executable binary",
+    "executable command",
     "bin",
     "which",
     "command exists"
   ],
-  "homepage": "https://github.com/huuyafwww/has-bin",
+  "homepage": "https://github.com/huuyafwww/has-command",
   "bugs": {
-    "url": "https://github.com/huuyafwww/has-bin/issues"
+    "url": "https://github.com/huuyafwww/has-command/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huuyafwww/has-bin.git"
+    "url": "git+https://github.com/huuyafwww/has-command.git"
   },
   "license": "MIT",
   "type": "module",

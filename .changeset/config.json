@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "huuyafwww/has-bin" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "huuyafwww/has-command" }],
   "commit": false,
   "fixed": [],
   "linked": [],
