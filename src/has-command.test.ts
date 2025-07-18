@@ -2,7 +2,7 @@ import { hasCommand } from './has-command';
 
 describe('Positive', () => {
   it('For commands that exist', async () => {
-    expect(await hasCommand('cd')).toBe(true);
+    expect(await hasCommand('ls')).toBe(true);
   });
 });
 
